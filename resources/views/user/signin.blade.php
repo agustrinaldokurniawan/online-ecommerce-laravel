@@ -1,5 +1,5 @@
 @extends("layouts.master") 
-@section('title') Sign Up - Laravel Shopping Cart
+@section('title') Sign In - Laravel Shopping Cart
 @endsection 
 @section('content')
 <div class="row">

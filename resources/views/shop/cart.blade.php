@@ -14,9 +14,9 @@ Cart
             <div class="mr-auto p-2 bd-highlight">{{$product['item']['title']}}</div>
             <div class="p-2 bd-highlight">{{$product['price']}}</div>
             <div class="p-2 bd-highlight">{{$product['qty']}}</div>
-            <div class="p-2 bd-highlight"><a href="#"><i class="fas fa-plus-circle"></i></a></div>
-            <div class="p-2 bd-highlight"><a href="#"><i class="fas fa-minus-circle"></i></a></div>
-            <div class="p-2 bd-highlight"><a href="#"><i class="fas fa-ban"></i></a></div>
+            <div class="p-2 bd-highlight"><a href="{{route('product.increaseByOne', ['id'=>$product['item']['id']])}}"><i class="fas fa-plus-circle"></i></a></div>
+            <div class="p-2 bd-highlight"><a href="{{route('product.reduceByOne', ['id'=>$product['item']['id']])}}"><i class="fas fa-minus-circle"></i></a></div>
+            <div class="p-2 bd-highlight"><a href="{{route('product.remove', ['id'=>$product['item']['id']])}}"><i class="fas fa-ban"></i></a></div>
             </div>
             @endforeach
         </ul>
