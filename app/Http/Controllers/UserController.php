@@ -64,7 +64,7 @@ class UserController extends Controller
     public function getLogout(){
         if(Auth::check()){
             Auth::logout();
-            return redirect()->back();
+            return redirect()->route('product.index');
         }
         return redirect()->route('product.index');
     }

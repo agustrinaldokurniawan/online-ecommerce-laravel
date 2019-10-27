@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="{{route('product.index')}}">Navbar</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -21,8 +21,8 @@
     <div class="my-2 my-lg-0">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#"
-            ><i class="fas fa-shopping-cart"></i>Cart</a
+          <a class="nav-link" href="{{route('product.cart')}}"
+            ><i class="fas fa-shopping-cart"></i>Cart <span class="badge badge-success">{{ Session::has('cart') ? Session::get('cart')->totalQty: ''}}</span></a
           >
         </li>
       </ul>
