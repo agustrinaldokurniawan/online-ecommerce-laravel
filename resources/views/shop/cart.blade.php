@@ -27,7 +27,7 @@ Cart
     <strong>Total : {{$totalPrice}}</strong>
     </div>
     <div class="col-md-2">
-    <button class="btn btn-success">Checkout</button>
+        <a href="{{route('checkout')}}" type="button" class="btn btn-success">Checkout</a>
     </div>
 </div>
 @else
