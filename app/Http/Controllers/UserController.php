@@ -49,7 +49,7 @@ class UserController extends Controller
             'email'=>$request->input('email'),
             'password'=>$request->input('password')
         ])){
-            return redirect()->route('user.profile');
+            return redirect()->route('product.index');
         }
         return redirect()->back();
     }

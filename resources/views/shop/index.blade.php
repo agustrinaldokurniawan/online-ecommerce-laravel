@@ -23,7 +23,7 @@ Online ECommerce
         </p>
         <div class="clearfix">
           <div class="float-left"><strong>Rp {{ $product->price}}</strong></div>
-          <a href="#" class="btn btn-sm btn-success float-right">Buy</a>
+          <a href="{{ route('product.addToCart', ['id'=>$product->id])}}" class="btn btn-sm btn-success float-right">Buy</a>
         </div>
       </div>
     </div>
