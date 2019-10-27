@@ -9,7 +9,7 @@ Checkout
     <div class="col-md-12 text-center">
         <h1>Checkout</h1>
         <h4>Your Total: Rp {{$total}}</h4>
-        <div id="charge-error" class="alert alert-danger {{ !Session::has('error') ? 'd-none' ? : '' }}">
+        <div id="charge-error" class="alert alert-danger {{ !Session::has('error') ? 'd-none' : '' }}">
             {{ Session::get('error') }}
         </div>
     </div>
