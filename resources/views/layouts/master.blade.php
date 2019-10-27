@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <script src="https://kit.fontawesome.com/50834fb668.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ URL::to('src/css/app.css') }}">
     @yield('style')
   </head>
   <body>
